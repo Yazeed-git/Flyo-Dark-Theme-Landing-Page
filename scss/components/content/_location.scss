@@ -1,0 +1,45 @@
+.location{
+    @media(min-width:600px){
+        width: 100%;
+        max-width: 1000px;
+        margin: 2em auto;
+        padding: 0;
+    }
+    .row{
+        flex-direction: column;
+        padding: 1em;
+        @media(min-width:900px){
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        img{
+            max-width: 400px;
+            width: 100%;
+            margin:2em auto;
+            @media(min-width: 900px){
+                width: 55%;
+                margin-right: 4em;
+                align-self: flex-start;
+            }
+
+        }
+        .location-content{
+            @media(min-width: 900px){
+                width: 45%;
+                align-self: flex-start;
+            }
+            .location__desc{
+                line-height: 1.6;
+            }
+            .location__link{
+                color: $cta-gradient_cyan;
+                font-size: 1rem;
+                padding: 0 2em .5em 0;
+                border-bottom: 1px solid $cta-gradient_cyan;
+                background: url(../../../images/icon-arrow.svg) no-repeat 155px -1px;
+                background-size: 25px;
+            }
+        }
+        
+    }
+}

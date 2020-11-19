@@ -1,0 +1,57 @@
+.hero{
+    background-color: $intro-email_bg;
+    background-image: url(../../images/bg-curvy-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -1010px 30px;
+    @media (min-width: 600px) {
+        background-image: url(../../images/bg-curvy-desktop.svg);
+    }
+    @media (min-width: 960px) {
+        background-image: url(../../images/bg-curvy-desktop.svg);
+        background-position: center 150px;
+    }
+    .header{
+        .container{
+            justify-content: space-between;
+            align-items: center;
+            .nav{
+                .nav__list{
+                    align-items: center;
+                    li{
+                        margin-left: 1em;
+                        a{
+                            padding: .5em;
+                            font-size: $text-nav-links;
+                            @media (min-width: 600px) {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }    
+    }
+    .container{
+        .hero-content{
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                max-width: 400px;
+                @media (min-width: 600px) {
+                    width: 80%;
+                }
+            }
+            .hero__title{
+                font-size: $h1-size;
+                font-family: $primary_font;
+                line-height: 1.4;
+            }
+            .hero__desc{
+                line-height: 1.8;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.features-section{
+    background: $main_bg;
+    .features{
+        @media(min-width: 768px){
+            width: 100%;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: 400px 400px;
+            grid-template-rows: auto auto;
+            gap:3em;
+        }
+        padding: 1.5em;
+        grid-template-columns: 1fr;
+        .features-content{
+            @media(min-width: 960px){
+                margin-bottom: .5em;
+            }
+            #up{
+                margin-top: 20px;
+            }
+        }
+        .features__desc{
+            line-height: 1.6;
+            padding:0 2em;
+        }
+    }
+}
